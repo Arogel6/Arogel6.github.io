@@ -1,0 +1,54 @@
+<!Doctype html>
+<html> 
+<head>
+	<title>Graphics 4 - Line Path Canvas </title>
+</head>
+
+<body>
+	<h1>HTML5 Canvas</h1>
+		<p> Creating a calculated structure by using line path in Js/HTML </p>
+	
+	<canvas id="path" width="500" height="200" style="border:1px solid grey;"> </canvas>
+		<script>
+			const canvas = document.getElementById("path");
+			const ctx = canvas.getContext("2d");
+			
+			ctx.beginPath();
+			
+			ctx.moveTo(0,0);
+			
+			ctx.lineTo(200,100);
+			
+			ctx.strokeStyle = "red";
+			
+			ctx.lineWidth = 10;
+			
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.moveTo(200,100);
+			ctx.lineTo(200,150);
+			
+			ctx.moveTo(200,150);
+			ctx.lineTo(250,180);
+			
+			ctx.moveTo(250,180);
+			ctx.lineTo(300,150);
+			
+			ctx.moveTo(300,150);
+			ctx.lineTo(300,100);
+			
+			ctx.moveTo(300,100);
+			ctx.lineTo(500,0);
+			
+			ctx.strokeStyle = "red";
+			
+			ctx.lineWidth = 10;
+			
+			ctx.stroke();
+			
+			</script>
+			
+			
+</body>
+</html>

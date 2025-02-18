@@ -1,0 +1,173 @@
+<!Doctype html>
+<html>
+<head>
+	<title> Group Project </title>
+	<style>
+		canvas {
+			position: absolute;
+			top: 150;
+			left: 150;
+			}
+	</style>
+</head>
+
+<body>
+	<h1> Maze Group project </h1> 
+	<br>
+	<h3> By : Ailinn,Theodoes,Mateo,Jair </h3>
+	<h4 style='color: red;'> Red = Start </h4>
+	<h4 style='color: blue;'> Blue = End </h4>
+
+<canvas id="myCanvas" width="400" height="400" style="border:5px solid grey;"> </canvas>
+
+
+<script>
+	const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+			
+			ctx.beginPath();
+			
+			ctx.moveTo(140,0);
+			
+			ctx.lineTo(190,0);
+			
+			ctx.strokeStyle = "red";
+			
+			ctx.lineWidth = 10;
+			
+			ctx.stroke();
+			
+			
+			ctx.beginPath();
+			
+			ctx.moveTo(220,400);
+			
+			ctx.lineTo(270,400);
+			
+			ctx.strokeStyle = "blue";
+			
+			ctx.lineWidth = 10;
+			
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.moveTo(270,400);
+			ctx.lineTo(270,350);
+			
+			ctx.moveTo(270,350);
+			ctx.lineTo(350,350);
+			
+			ctx.moveTo(350,350);
+			ctx.lineTo(350,250);
+			
+			ctx.moveTo(350,300);
+			ctx.lineTo(300,300);
+			
+			ctx.moveTo(220,400);
+			ctx.lineTo(220,300);
+			
+			ctx.moveTo(270,300);
+			ctx.lineTo(120,300);
+			
+			ctx.moveTo(170,350);
+			ctx.lineTo(170,250);
+			
+			ctx.moveTo(120,300);
+			ctx.lineTo(120,150);
+			
+			ctx.moveTo(120,150);
+			ctx.lineTo(270,150);
+			
+			ctx.moveTo(270,150);
+			ctx.lineTo(270,250);
+			
+			ctx.moveTo(170,150);
+			ctx.lineTo(170,200);
+			
+			ctx.moveTo(270,200);
+			ctx.lineTo(225,200);
+			
+			ctx.moveTo(225,200);
+			ctx.lineTo(225,250);
+			
+			
+			
+			ctx.moveTo(50,400);
+			ctx.lineTo(50,250);
+			
+			ctx.moveTo(50,350);
+			ctx.lineTo(100,350);
+			
+			ctx.moveTo(50,200);
+			ctx.lineTo(50,150);
+			
+			ctx.moveTo(50,150);
+			ctx.lineTo(0,150);
+			
+			
+			
+			ctx.moveTo(0,50);
+			ctx.lineTo(50,50);
+			
+			ctx.moveTo(100,0);
+			ctx.lineTo(100,100);
+			
+			ctx.moveTo(100,100);
+			ctx.lineTo(50,100);
+			
+			
+			
+			ctx.moveTo(230,0);
+			ctx.lineTo(230,50);
+			
+			ctx.moveTo(350,0);
+			ctx.lineTo(350,50);
+			
+			ctx.moveTo(350,50);
+			ctx.lineTo(310,50);
+			
+			ctx.moveTo(310,50);
+			ctx.lineTo(310,250);
+			
+			ctx.moveTo(310,150);
+			ctx.lineTo(350,150);
+			
+			ctx.moveTo(400,100);
+			ctx.lineTo(350,100);
+			
+			ctx.moveTo(400,200);
+			ctx.lineTo(350,200);
+			
+			ctx.moveTo(310,100);
+			ctx.lineTo(190,100);
+			
+			ctx.moveTo(190,100);
+			ctx.lineTo(190,50);
+			
+			ctx.moveTo(190,50);
+			ctx.lineTo(140,50);
+			
+			ctx.moveTo(140,50);
+			ctx.lineTo(140,100);
+			
+			ctx.strokeStyle = "grey";
+			
+			ctx.lineWidth = 5;
+			
+			ctx.stroke();
+
+</script>
+
+		<svg width='400' height='400'>
+			<g>
+				<circle cx='170' cy='30' r='10' stroke='orange' fill='yellow'> </circle>
+				
+				<animateMotion path='M 0 0 H -45 V 100 H 125 V 300 H 80 V 500' dur='4s' repeatCount='1' />
+				
+			</g>
+		</svg>
+		
+</body>
+</html>
+
+	

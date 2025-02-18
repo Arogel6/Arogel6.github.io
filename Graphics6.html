@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+<head> SVG Animation 
+	<title. Animation - moment </title>
+</head>
+
+<body>
+	<h1> Animation </h1>
+	
+	<h3> Circle </h3>
+	<p> Lets move the circle </p>
+	
+		<svg width='400' height='400'>
+			<g>
+				<circle cx='100' cy='100' r='50' stroke='red' fill='yellow'> </circle>
+				
+				<animateMotion path='M 0 0 V 0 H 200 Z'  dur='3s' repeatCount='150' />
+				
+			</g>
+			
+			<g>
+				<circle cx='100' cy='100' r='50' stroke='red' fill='green'> </circle>
+				
+				<animateMotion path='M 0 0 V 0 H 200 Z'  dur='2s' repeatCount='150' />
+				
+			</g>
+			
+		</svg>
+		
+		<h2> Moving Shape in a square path </h2>
+		<svg width='500' height='500'>
+		<g> 
+			<rect width='70' height='30' fill='blue' stroke='yellow' stroke-width='2' />
+			<animateMotion path='M 10 10 H 330 V 200 H 0 Z' dur='1s' repeatCount='21' />
+		</g>
+		
+		</svg>
+		
+		<h2> Solar system</h2>
+		<svg width='1500' height='1500'>
+		<g> 
+			<circle cx='250' cy='205' r='60' stroke='yellow' fill='orange'> </circle>
+		</g>
+		<g>
+			<circle cx='100' cy='50' r='50' stroke='green' fill='blue'> </circle>
+			<animateMotion path='M 10 10 H 300 V 300 H 0 Z' dur='6s' repeatCount='indefinite' />
+		</g>
+		<g>
+			<circle cx='100' cy='50' r='40' stroke='orange' fill='red'> </circle>
+			<animateMotion path='M 10 10 H 300 V 300 H 0 Z' dur='5s' repeatCount='indefinite' />
+		</g>
+		</svg>
+		
+</body>
+</html>
+	
+	
+	

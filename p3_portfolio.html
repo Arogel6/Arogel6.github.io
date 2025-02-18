@@ -1,0 +1,125 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<title> Portfolio </title>
+</head>
+<!-- This is my portfolio page and i am using enhanced CSS to make icons -->
+
+<body>
+	<nav style='background-color:pink; text-align:center; font-weight:bold;'>
+	<a href='p1_aboutme.html'> About me </a> &nbsp &nbsp &nbsp
+	<a href='p2_hobby.html'> My Hobbies</a> &nbsp &nbsp &nbsp
+	<a href='p3_portfolio.html'> My portfolio </a> &nbsp &nbsp &nbsp
+	<a href='p4_favorites.html'> Favorites</a> &nbsp &nbsp &nbsp
+	<a href='p5_form.html'> Contact Me </a> &nbsp &nbsp &nbsp
+	</nav>
+	
+
+	<h1> This is my Third page - My Portfolio </h1>
+<!-- Internal CSS -->
+<style>
+* {
+	box-sizing: border-box }
+	
+body{
+	background-color: MistyRose;
+	padding:  20px;
+	font-family:Arial;
+	}
+	/*center of the page */
+.main {
+	max-width:1000px;
+	margin:auto:
+	}
+
+.row {
+	margin: 8px-16px }
+	
+/* create four equal colums that floats next to each other */
+	.column {
+	float: left;
+	width: 25px;
+	}
+
+/* add padding between each column */
+	.row, .row>.column {
+	padding: 8px;}
+	
+/*content*/
+.content {
+	background-color: pink;
+	color: white;
+	padding:10px;
+	}
+	
+/* responsive layout - make a two column layout instead of four columns */
+@media screen and (max-width: 900px) {
+	.column {width: 50%;}}
+	
+/* responsive layout - makes a two column stack on top of each other 
+instead of next to each other */
+@media screen and (max width: 600px) {
+	.column {width : 100% ;}
+	}
+	
+/* clear floadts after rows */
+	.row:after{
+		content: '';
+		display: table;
+		clear:both;
+		}
+
+
+</style>
+
+<!-- Portfolio Gallery Grid -->
+	<div class='row'>
+		<div class='column'>
+			<div class='content'>
+			<img src=' bluelagoon.jpg ' alt='Blue Lagoon'  height=' auto  '  width=' 50% ' style='width:100%' >
+			<h3> My Dream Vacation </h3>
+			<p> This is the Blue Lagoon i want to go because it looks so pretty and i see people take baths in there and also i heared you cant put your hair in the water or else your hair is going to be a really bad texture.     </p>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='column'>
+			<div class='content'>
+			<img src='home.jpg   ' alt=' Dream Home  '  height=' auto  '  width=' 50% ' style='width:100%' >
+			<h3> My Dream House </h3>
+			<p> This is my dream home i want something cozy with a nice veiw i also do want a ranch because i would love to own all types of animals.     </p>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='column'>
+			<div class='content'>
+			<img src='web.jpg   ' alt=' Web design '  height=' auto  '  width=' 50% ' style='width:100%' >
+			<h3> My Dream Job </h3>
+			<p>  Web design is my dream job because i love design and making things look nice and i also love coding its the best thing i've encountered.    </p>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='column'>
+			<div class='content'>
+			<img src=' ugg.jpg ' alt=' Ugg shoes '  height=' auto '  width=' 50% ' style='width:100%' >
+			<h3> My Dream shoes </h3>
+			<p>  These are my dream shoes i feel like im going to get them as one of my christmas presents but i love them because there uggs and i love how they look and there is fur inside so its perfect for winter.    </p>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='column'>
+			<div class='content'>
+			<img src=' vanity.jpg ' alt='Vanity  '  height=' auto  '  width=' 50% ' style='width:100%' >
+			<h3> My Dream Vanity</h3>
+			<p>   This is my dream vanity i love pink and i love how clean it looks.  </p>
+		</div>
+	</div>
+	
+</div>
+ 
+</body>
+</html>
